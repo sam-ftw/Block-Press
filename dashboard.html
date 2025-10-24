@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Press - Dashboard</title>
+  <link rel="stylesheet" href="style02.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="title"><a href="dashboard.html" style="color: white; text-decoration: none;">Block Press</a></div>
+    <div class="buttons">
+      <button><a href="friend.html" style="color: white; text-decoration: none;">Friends</a></button>
+      <button><a href="chat.html" style="color: white; text-decoration: none;">Chat</a></button>
+    </div>
+  </div>
+
+  <!-- Layout -->
+  <div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">🏠 Home</a></li>
+        <li><a href="#">👤 Profile</a></li>
+        <li><a href="friend.html">👥 Friends</a></li>
+        <li><a href="#">⚙️ Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="feed">
+      <!-- Create Post -->
+      <div class="create-post">
+        <textarea placeholder="What's on your mind?"></textarea>
+        <button class="btn">Post</button>
+      </div>
+
+      <!-- Example Post 1 -->
+      <div class="post">
+        <div class="post-header">
+          <strong>@jesna</strong> • <span>2 hrs ago</span>
+        </div>
+        <div class="post-content">
+          <p>Hello everyone 👋 This is my first post on Block Press!</p>
+        </div>
+        <div class="post-actions">
+          <button>👍 Like</button>
+          <button>💬 Comment</button>
+        </div>
+      </div>
+
+      <!-- Example Post 2 -->
+      <div class="post">
+        <div class="post-header">
+          <strong>@alex</strong> • <span>5 hrs ago</span>
+        </div>
+        <div class="post-content">
+          <p>Sharing an image from a recent protest in LA.</p>
+          <div class="post-image"></div>
+        </div>
+        <div class="post-actions">
+          <button>👍 Like</button>
+          <button>💬 Comment</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e2a2f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Top navigation bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #10777d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  font-weight: bold;
+}
+
+.navbar .title {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.navbar .buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar button {
+  background-color: #145255;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.navbar button:hover {
+  background-color: #144455;
+}
+
+/* Main content */
+.container {
+  margin-top: 100px;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container p {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Animated box */
+.box {
+  position: relative;
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(270deg, #00ff88, #0088ff, #00ff88);
+  background-size: 600% 600%;
+  z-index: -1;
+  animation: glow 6s linear infinite;
+  border-radius: inherit;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: #1e2a2f;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@keyframes glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 220px;
+  margin: 0.7rem auto;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background-color: #145255;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #144455;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+}
